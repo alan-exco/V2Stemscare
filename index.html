@@ -339,6 +339,14 @@ a[href^="tel:"]{white-space:nowrap}
 .wa-float{right:auto !important;left:22px !important}
 @media (max-width:860px){.callbar{padding-bottom:calc(58px + env(safe-area-inset-bottom)) !important}}
 @media (max-width:860px){body{padding-bottom:132px !important}}
+
+/* header phones: aligned columns */
+.nav-phones{display:grid !important;grid-template-columns:14px auto auto auto;column-gap:7px;row-gap:3px;align-items:center}
+.nav-phones a{display:contents !important}
+.nav-phones .np-r{font-weight:700}
+.nav-phones .np-n{opacity:.85}
+.nav-phones b{font-variant-numeric:tabular-nums;text-align:left}
+@media (max-width:1420px){.nav-phones{display:none !important}}
 </style>
 </head>
 <body id="top">
@@ -380,7 +388,7 @@ a[href^="tel:"]{white-space:nowrap}
       </ul>
     </nav>
     <div class="nav-cta">
-      <div class="nav-phones nav-phone"><a href="tel:+61475212770"><svg><use href="#i-phone"/></svg>North · Kgomotso <b>0475 212 770</b></a><a href="tel:+61459676429"><svg><use href="#i-phone"/></svg>South · Mwangala <b>0459 676 429</b></a></div>
+      <div class="nav-phones nav-phone"><a href="tel:+61475212770"><svg><use href="#i-phone"/></svg><span class="np-r">North</span><span class="np-n">Kgomotso</span><b>0475 212 770</b></a><a href="tel:+61459676429"><svg><use href="#i-phone"/></svg><span class="np-r">South</span><span class="np-n">Mwangala</span><b>0459 676 429</b></a></div>
       <a class="btn btn-sun" href="#contact">Book a free chat</a>
       <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><svg><use href="#i-menu"/></svg></button>
     </div>
