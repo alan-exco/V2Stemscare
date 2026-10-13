@@ -352,6 +352,16 @@ a[href^="tel:"]{white-space:nowrap}
 .nav-phones b{font-variant-numeric:tabular-nums;text-align:left}
 @media (max-width:1420px){.nav-phones{display:none !important}}
 .opt{font-weight:400;opacity:.7;font-size:.9em}
+.news{background:var(--mist)}
+.post{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:start}
+.post time{display:inline-block;font-family:var(--display);font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--leaf-ink);margin-bottom:12px}
+.post h3{font-size:clamp(24px,2.4vw,32px);margin-bottom:16px;line-height:1.15}
+.post p{font-size:18px;margin-bottom:14px}
+.post-gallery{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.post-gallery figure{margin:0;border-radius:18px;overflow:hidden;background:#fff}
+.post-gallery img{display:block;width:100%;height:100%;aspect-ratio:3/2;object-fit:cover}
+.post-gallery .g-main{grid-column:1 / -1}
+@media (max-width:860px){.post{grid-template-columns:1fr;gap:28px}}
 </style>
 </head>
 <body id="top">
@@ -389,6 +399,7 @@ a[href^="tel:"]{white-space:nowrap}
         <li><a href="#about">About</a></li>
         <li><a href="#how">How it works</a></li>
         <li><a href="#founders">Founders</a></li>
+        <li><a href="#news">News</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -399,7 +410,7 @@ a[href^="tel:"]{white-space:nowrap}
     </div>
   </div>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#top">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#how">How it works</a><a href="#founders">Founders</a><a href="#contact">Contact</a>
+    <a href="#top">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#how">How it works</a><a href="#founders">Founders</a><a href="#news">News</a><a href="#contact">Contact</a>
   </div>
 </header>
 
@@ -535,6 +546,29 @@ a[href^="tel:"]{white-space:nowrap}
         <ul class="creds"><li>Human Resources</li><li>Cert IV Community Services</li><li>Activity Coordination</li><li>Disability support</li></ul>
       </article>
     </div>
+  </div>
+</section>
+
+<!-- WHAT'S HAPPENING -->
+<section class="sec news" id="news">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">What's happening</span>
+      <h2>Out in the community.</h2>
+    </div>
+    <article class="post">
+      <div class="post-text">
+        <time datetime="2026-10-13">13 October 2026</time>
+        <h3>Meeting Perth's providers and support coordinators</h3>
+        <p>Today Kgomotso and Mwangala met with other NDIS providers and support coordinators at a Perth disability sector networking event &mdash; sharing how StemsCare works and building the local partnerships that help participants find the right support, sooner.</p>
+        <p>Support coordinators: we have capacity now across Perth's northern and southern suburbs. <a href="#contact">Get in touch</a> for a referral chat.</p>
+      </div>
+      <div class="post-gallery">
+        <figure class="g-main"><img src="news-1.jpg" alt="StemsCare co-founders Mwangala Cook and Kgomotso Kereng at a Perth disability sector networking event" loading="lazy" width="1200" height="800"></figure>
+        <figure><img src="news-2.jpg" alt="The StemsCare co-founders beside the StemsCare Services banner" loading="lazy" width="1200" height="800"></figure>
+        <figure><img src="news-3.jpg" alt="Kgomotso and Mwangala talking with a support coordinator at the StemsCare table" loading="lazy" width="1200" height="800"></figure>
+      </div>
+    </article>
   </div>
 </section>
 
