@@ -351,6 +351,7 @@ a[href^="tel:"]{white-space:nowrap}
 .nav-phones .np-n{opacity:.85}
 .nav-phones b{font-variant-numeric:tabular-nums;text-align:left}
 @media (max-width:1420px){.nav-phones{display:none !important}}
+.opt{font-weight:400;opacity:.7;font-size:.9em}
 </style>
 </head>
 <body id="top">
@@ -605,6 +606,11 @@ a[href^="tel:"]{white-space:nowrap}
         </div>
         <div class="field"><label for="for">Who is the support for?</label>
           <select id="for" name="support_for"><option>Myself</option><option>A family member</option><option>Someone I support professionally</option><option>Not sure yet</option></select></div>
+        <div class="field-row">
+          <div class="field"><label for="suburb">Suburb <span class="opt">(optional)</span></label><input id="suburb" name="suburb" autocomplete="address-level2" placeholder="e.g. Joondalup or Baldivis"></div>
+          <div class="field"><label for="plan">NDIS plan type <span class="opt">(optional)</span></label>
+            <select id="plan" name="plan_management"><option value="">Select…</option><option>Plan-managed</option><option>Self-managed</option><option>NDIA-managed (agency)</option><option>Not sure / no plan yet</option></select></div>
+        </div>
         <div class="field"><label for="msg">How can we help?</label><textarea id="msg" name="message" placeholder="Tell us a little about the support you're looking for"></textarea></div>
         <button class="btn btn-ocean" type="submit">Send enquiry</button>
         <p class="fine">We use your details only to respond to your enquiry. See our <a href="privacy.html">Privacy policy</a>.</p>
