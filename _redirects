@@ -1,0 +1,43 @@
+# Old-site addresses -> sections of the new one-page site (301 = permanent)
+/contact-us        /#contact   301
+/contact-us/*      /#contact   301
+/contact           /#contact   301
+/get-in-touch      /#contact   301
+/enquire           /#contact   301
+/enquiry           /#contact   301
+/referral          /#contact   301
+/referrals         /#contact   301
+/make-a-referral   /#contact   301
+
+/services          /#services  301
+/services/*        /#services  301
+/our-services      /#services  301
+/our-services/*    /#services  301
+/ndis-services     /#services  301
+/ndis-support      /#services  301
+/ndis-supports     /#services  301
+/support           /#services  301
+/supports          /#services  301
+
+/about             /#about     301
+/about-us          /#about     301
+/about-us/*        /#about     301
+/our-story         /#about     301
+/our-team          /#founders  301
+/team              /#founders  301
+
+/how-it-works      /#how       301
+/getting-started   /#how       301
+/faq               /#how       301
+/faqs              /#how       301
+
+/news              /#news      301
+/news/*            /#news      301
+/blog              /#news      301
+/blog/*            /#news      301
+/events            /#news      301
+
+/home              /           301
+/index.php         /           301
+/privacy-policy    /privacy.html 301
+/thank-you         /thanks.html  301
