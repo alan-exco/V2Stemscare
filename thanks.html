@@ -1,6 +1,18 @@
 <!doctype html>
 <html lang="en-AU">
 <head>
+<!-- Google tag (gtag.js) - Google Ads AW-18264546153. Phone taps on any tel: link fire the "Website phone number tap" conversion. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18264546153"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18264546153');
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="tel:"]');
+    if (a) { gtag('event', 'conversion', {'send_to': 'AW-18264546153/b_tJCIT6-aIdEOm2m4VE'}); }
+  });
+</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Thank you | StemsCare Services</title>
