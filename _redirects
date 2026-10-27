@@ -41,3 +41,7 @@
 /index.php         /           301
 /privacy-policy    /privacy.html 301
 /thank-you         /thanks.html  301
+
+# Retired duplicate of the home page (Oct 2026)
+/v2.html          /           301
+/v2               /           301
