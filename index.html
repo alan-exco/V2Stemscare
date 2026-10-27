@@ -418,6 +418,29 @@ a[href^="tel:"]{white-space:nowrap}
 .post-gallery img{display:block;width:100%;height:100%;aspect-ratio:3/2;object-fit:cover}
 .post-gallery .g-main{grid-column:1 / -1}
 @media (max-width:860px){.post{grid-template-columns:1fr;gap:28px}}
+
+/* Region pages + 'Where we support' */
+.areas{background:var(--mist)}
+.hero-grid>*{min-width:0}
+.region-hero h1{font-size:clamp(40px,5.6vw,84px);overflow-wrap:break-word}
+.area-cards{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.area-card{display:block;background:#fff;border-radius:32px 10px 32px 10px;padding:36px 36px 32px;text-decoration:none;color:var(--body);border:2px solid transparent;transition:border-color .2s,transform .2s}
+.area-card:hover{border-color:var(--leaf);transform:translateY(-2px)}
+.area-card h3{font-size:clamp(28px,3vw,40px);margin-bottom:10px}
+.area-card p{font-size:18px;margin-bottom:18px}
+.area-card .go{font-family:var(--display);font-weight:700;color:var(--ocean);font-size:18px}
+.area-card .ph{display:block;font-family:var(--display);font-weight:700;color:var(--ink);font-size:20px;margin-bottom:14px}
+.suburbs{list-style:none;margin:0 0 28px;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.suburbs li{background:#fff;border:2px solid var(--line);border-radius:999px;padding:10px 18px;font-family:var(--display);font-weight:700;font-size:18px;color:var(--ink)}
+.area-note{font-size:19px;max-width:40em}
+.region-contact{background:var(--euc);color:#DDEBE3}
+.region-contact h2{color:#fff}
+.region-contact .kicker{color:#9FDCAE}
+.region-contact .hero-actions{margin-top:32px}
+.region-contact p{font-size:19px;max-width:38em}
+.region-contact a.alt{color:#fff}
+.plan-box{margin-top:28px;background:#fff;border-left:6px solid var(--leaf);border-radius:0 18px 18px 0;padding:22px 26px;font-size:18px;max-width:46em}
+@media (max-width:860px){.area-cards{grid-template-columns:1fr}.area-card{padding:30px 24px}}
 </style>
 </head>
 <body id="top">
@@ -541,6 +564,31 @@ a[href^="tel:"]{white-space:nowrap}
     <div class="svc-cta">
       <div><h3>Not sure what you need?</h3><p>Tell us your goals and plan. We'll help you make sense of your options — no pressure, no jargon.</p></div>
       <a class="btn btn-euc" href="#contact">Talk it through</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHERE WE SUPPORT -->
+<section class="sec areas" id="areas">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Where we support</span>
+      <h2>North and south of the river.</h2>
+      <p>Each region has its own number, so you reach the person who looks after your area.</p>
+    </div>
+    <div class="area-cards">
+      <a class="area-card" href="/perth-northern-suburbs/">
+        <h3>Perth Northern Suburbs</h3>
+        <span class="ph">0475 212 770</span>
+        <p>Jindalee, Alkimos, Clarkson, Joondalup and nearby.</p>
+        <span class="go">NDIS support in the northern suburbs &rarr;</span>
+      </a>
+      <a class="area-card" href="/perth-southern-suburbs/">
+        <h3>Perth Southern Suburbs</h3>
+        <span class="ph">0459 676 429</span>
+        <p>Rockingham, Baldivis, Mandurah and nearby.</p>
+        <span class="go">NDIS support in the southern suburbs &rarr;</span>
+      </a>
     </div>
   </div>
 </section>
@@ -723,7 +771,7 @@ a[href^="tel:"]{white-space:nowrap}
       </div>
       <div>
         <h4>Explore</h4>
-        <ul><li><a href="#why">Why choose us</a></li><li><a href="#services">Our services</a></li><li><a href="#how">Getting started</a></li><li><a href="#founders">Our founders</a></li><li><a href="privacy.html">Privacy policy</a></li></ul>
+        <ul><li><a href="#why">Why choose us</a></li><li><a href="#services">Our services</a></li><li><a href="#how">Getting started</a></li><li><a href="#founders">Our founders</a></li><li><a href="/perth-northern-suburbs/">Northern suburbs</a></li><li><a href="/perth-southern-suburbs/">Southern suburbs</a></li><li><a href="privacy.html">Privacy policy</a></li></ul>
       </div>
       <div>
         <h4>Get in touch</h4>
