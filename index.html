@@ -453,6 +453,39 @@ a[href^="tel:"]{white-space:nowrap}
 @keyframes hire-pulse{0%{box-shadow:0 0 0 0 rgba(245,137,42,.75)}70%{box-shadow:0 0 0 10px rgba(245,137,42,0)}100%{box-shadow:0 0 0 0 rgba(245,137,42,0)}}
 @media (prefers-reduced-motion:reduce){.hire-bar .tag i{animation:none}}
 @media (max-width:560px){.hire-bar .msg{font-size:15px}.hire-bar .go{font-size:15px}}
+
+/* Batch 3: service, referral and FAQ pages */
+.crumbs{font-size:15px;margin-bottom:18px;color:inherit;opacity:.85}
+.crumbs a{color:inherit}
+.incl{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:14px 36px;max-width:60em}
+.incl li{position:relative;padding:4px 0 4px 40px;font-size:19px}
+.incl li svg{position:absolute;left:0;top:4px;width:26px;height:26px;color:var(--leaf-ink)}
+.info-cards{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:8px}
+.info-card{background:#fff;border-radius:32px 10px 32px 10px;padding:34px 34px 30px}
+.info-card h3{font-size:clamp(24px,2.4vw,32px);margin-bottom:10px}
+.info-card p{font-size:18px}
+.svc a.svc-link{color:inherit;text-decoration:none}
+.svc a.svc-link:hover{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:6px}
+.svc .more{display:inline-block;margin-top:8px;font-family:var(--display);font-weight:700;color:var(--ocean);font-size:17px}
+.other-svcs{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px}
+.other-svcs a{display:inline-block;background:#fff;border:2px solid var(--line);border-radius:999px;padding:12px 20px;font-family:var(--display);font-weight:700;font-size:18px;color:var(--ink);text-decoration:none}
+.other-svcs a:hover{border-color:var(--leaf)}
+.faq-list{max-width:52em}
+.faq-list details{border-bottom:1px solid #BFD3E6;padding:22px 0}
+.faq-list details:first-child{border-top:2px solid var(--ink)}
+.faq-list summary{cursor:pointer;list-style:none;font-family:var(--display);font-weight:700;font-size:clamp(21px,2vw,26px);color:var(--ink);display:flex;justify-content:space-between;gap:20px}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:"+";font-size:30px;line-height:1;color:var(--ocean);flex:none}
+.faq-list details[open] summary::after{content:"\2212"}
+.faq-list .a{padding-top:12px;font-size:18px;max-width:46em}
+.faq-list .a p+p{margin-top:10px}
+.ref-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:start}
+.check-group{display:grid;grid-template-columns:1fr 1fr;gap:8px 18px;margin-top:6px}
+.check-group label,.consent label{display:flex;gap:10px;align-items:flex-start;font-size:17px;font-weight:400;cursor:pointer}
+.check-group input,.consent input{width:20px;height:20px;margin-top:3px;flex:none;accent-color:var(--ocean)}
+.consent{margin:8px 0 22px;padding:16px 18px;background:#F3F7FB;border-radius:14px}
+.priv-note{font-size:16px;background:#FFF8E6;border-left:5px solid var(--sun);border-radius:0 12px 12px 0;padding:12px 16px;margin:0 0 22px}
+@media (max-width:860px){.incl,.info-cards,.ref-grid,.check-group{grid-template-columns:1fr}.info-card{padding:28px 24px}}
 </style>
 </head>
 <body id="top">
@@ -572,11 +605,11 @@ a[href^="tel:"]{white-space:nowrap}
       <p>Everyday, practical help that keeps you safe, independent and connected — in your home and out in your community.</p>
     </div>
     <ul class="svc-list">
-      <li class="svc"><span class="svc-ico"><svg><use href="#i-home"/></svg></span><h3>Assistance with daily life</h3><p>Personal routines, hygiene, meal prep and the day-to-day support that keeps you living independently at home.</p></li>
-      <li class="svc"><span class="svc-ico"><svg><use href="#i-users"/></svg></span><h3>Community participation</h3><p>Getting out, staying active and building confidence — social activities, hobbies, appointments and connection.</p></li>
-      <li class="svc"><span class="svc-ico"><svg><use href="#i-broom"/></svg></span><h3>Domestic assistance</h3><p>Cleaning, laundry and general upkeep, so your home stays safe, comfortable and easy to manage.</p></li>
-      <li class="svc"><span class="svc-ico"><svg><use href="#i-user"/></svg></span><h3>Personal care</h3><p>Respectful, dignified help with bathing, dressing, grooming and mobility — always at your pace.</p></li>
-      <li class="svc"><span class="svc-ico"><svg><use href="#i-car"/></svg></span><h3>Transport &amp; access</h3><p>Safe, reliable travel to appointments, activities and errands — so nothing gets in the way of your day.</p></li>
+      <li class="svc"><span class="svc-ico"><svg><use href="#i-home"/></svg></span><h3><a class="svc-link" href="/services/assistance-with-daily-life/">Assistance with daily life</a></h3><p>Personal routines, hygiene, meal prep and the day-to-day support that keeps you living independently at home.</p></li>
+      <li class="svc"><span class="svc-ico"><svg><use href="#i-users"/></svg></span><h3><a class="svc-link" href="/services/community-participation/">Community participation</a></h3><p>Getting out, staying active and building confidence — social activities, hobbies, appointments and connection.</p></li>
+      <li class="svc"><span class="svc-ico"><svg><use href="#i-broom"/></svg></span><h3><a class="svc-link" href="/services/domestic-assistance/">Domestic assistance</a></h3><p>Cleaning, laundry and general upkeep, so your home stays safe, comfortable and easy to manage.</p></li>
+      <li class="svc"><span class="svc-ico"><svg><use href="#i-user"/></svg></span><h3><a class="svc-link" href="/services/personal-care/">Personal care</a></h3><p>Respectful, dignified help with bathing, dressing, grooming and mobility — always at your pace.</p></li>
+      <li class="svc"><span class="svc-ico"><svg><use href="#i-car"/></svg></span><h3><a class="svc-link" href="/services/transport/">Transport &amp; access</a></h3><p>Safe, reliable travel to appointments, activities and errands — so nothing gets in the way of your day.</p></li>
     </ul>
     <div class="svc-cta">
       <div><h3>Not sure what you need?</h3><p>Tell us your goals and plan. We'll help you make sense of your options — no pressure, no jargon.</p></div>
@@ -788,7 +821,7 @@ a[href^="tel:"]{white-space:nowrap}
       </div>
       <div>
         <h4>Explore</h4>
-        <ul><li><a href="#why">Why choose us</a></li><li><a href="#services">Our services</a></li><li><a href="#how">Getting started</a></li><li><a href="#founders">Our founders</a></li><li><a href="/perth-northern-suburbs/">Northern suburbs</a></li><li><a href="/perth-southern-suburbs/">Southern suburbs</a></li><li><a href="/vacancies/">Vacancies</a></li><li><a href="privacy.html">Privacy policy</a></li></ul>
+        <ul><li><a href="#why">Why choose us</a></li><li><a href="#services">Our services</a></li><li><a href="#how">Getting started</a></li><li><a href="#founders">Our founders</a></li><li><a href="/perth-northern-suburbs/">Northern suburbs</a></li><li><a href="/perth-southern-suburbs/">Southern suburbs</a></li><li><a href="/services/">All services</a></li><li><a href="/referrals/">Make a referral</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/vacancies/">Vacancies</a></li><li><a href="privacy.html">Privacy policy</a></li></ul>
       </div>
       <div>
         <h4>Get in touch</h4>
