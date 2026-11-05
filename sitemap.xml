@@ -56,4 +56,5 @@
     <loc>https://stemscare.com.au/faq/</loc>
     <lastmod>2026-10-28</lastmod>
   </url>
+  <url><loc>https://stemscare.com.au/about/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

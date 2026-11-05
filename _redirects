@@ -17,12 +17,12 @@
 /support           /#services  301
 /supports          /#services  301
 
-/about             /#about     301
-/about-us          /#about     301
-/about-us/*        /#about     301
-/our-story         /#about     301
-/our-team          /#founders  301
-/team              /#founders  301
+/about             /about/     301
+/about-us          /about/     301
+/about-us/*        /about/     301
+/our-story         /about/     301
+/our-team          /about/     301
+/team              /about/     301
 
 /how-it-works      /#how       301
 /getting-started   /#how       301
