@@ -28,11 +28,9 @@
 /getting-started   /#how       301
 /faqs              /faq/       301
 
-/news              /#news      301
-/news/*            /#news      301
-/blog              /#news      301
-/blog/*            /#news      301
-/events            /#news      301
+/news              /blog/      301
+/news/*            /blog/      301
+/events            /blog/      301
 
 /home              /           301
 /index.php         /           301
